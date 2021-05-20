@@ -20,6 +20,8 @@ namespace MusicOnline
 		public virtual DbSet<SongStyles> SongStyles { get; set; }
 		public virtual DbSet <Style> Styles { get; set; }
 
+		public virtual DbSet <Album> Albums { get; set; }
+
 		public MusicContext(DbContextOptions<MusicContext> options)
 			: base(options)
 		{
