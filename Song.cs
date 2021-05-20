@@ -15,7 +15,8 @@ namespace MusicOnline
 		}
 
 		public int Id { get; set; }
-
+		[Required(ErrorMessage = "Поле не повинно бути порожнім")]
+		[Display(Name = "Назва")]
 		public string Name { get; set; }
 
 		public int AlbumId { get; set; }

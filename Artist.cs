@@ -12,6 +12,8 @@ namespace MusicOnline
 			ArtistSongs = new List <ArtistSongs>();
 		}
 		public int Id { get; set; }
+		[Required(ErrorMessage = "Поле не повинно бути порожнім")]
+		[Display(Name = "Ім'я")]
 		public string Name { get; set; }
 		public virtual ICollection <ArtistSongs> ArtistSongs { get; set; }
 	}

@@ -12,11 +12,14 @@ namespace MusicOnline
 			Songs = new List<Song>();
 		}
 		public int Id { get; set; }
+		[Required(ErrorMessage = "Поле не повинно бути порожнім")]
+		[Display(Name = "Назва")]
 		public string Name { get; set; }
 
+		[Required(ErrorMessage = "Поле не повинно бути порожнім")]
+		[Display(Name = "Рік випуску")]
 		public string ReleaseYear { get; set; }
 
-		public string Genre { get; set; }
 
 		public virtual ICollection<Song> Songs { get; set; }
 	}
