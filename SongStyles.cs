@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using MusicOnline;
 
-namespace MeterOnline
+namespace MusicOnline
 {
 	public class SongStyles
 	{

@@ -3,10 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicOnline", "MusicOnline.csproj", "{80D44740-65F9-4908-8A0B-52352E5D112C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicOnline", "MusicOnline.csproj", "{80D44740-65F9-4908-8A0B-52352E5D112C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{A601941C-2CB4-4E4E-84E2-3E6BA3FBABF8}"
 	ProjectSection(SolutionItems) = preProject
+		Album.cs = Album.cs
 		Artist.cs = Artist.cs
 		ArtistSongs.cs = ArtistSongs.cs
 		MusicContext.cs = MusicContext.cs

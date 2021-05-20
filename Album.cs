@@ -5,17 +5,19 @@ using MusicOnline;
 
 namespace MusicOnline
 {
-	public class Style
+	public class Album
 	{
-		public Style()
+		public Album()
 		{
-			SongStyles = new List<SongStyles>();
+			Songs = new List<Song>();
 		}
-
 		public int Id { get; set; }
 		public string Name { get; set; }
 
-		public virtual ICollection<SongStyles> SongStyles { get; set; }
+		public string ReleaseYear { get; set; }
 
+		public string Genre { get; set; }
+
+		public virtual ICollection<Song> Songs { get; set; }
 	}
 }

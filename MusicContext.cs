@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using MusicOnline;
 
 
 namespace MusicOnline
@@ -17,7 +18,7 @@ namespace MusicOnline
 		public virtual DbSet<SongPlaylists> SongPlaylists { get; set; }
 
 		public virtual DbSet<SongStyles> SongStyles { get; set; }
-		public virtual DbSet<Style> Styles { get; set; }
+		public virtual DbSet <Style> Styles { get; set; }
 
 		public MusicContext(DbContextOptions<MusicContext> options)
 			: base(options)
