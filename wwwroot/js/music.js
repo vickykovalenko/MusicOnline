@@ -38,7 +38,7 @@ function deleteStyle(id) {
 }
 
 function displayEditForm(id) {
-    const style = styles.find(category => style.id === id);
+    const style = styles.find(style => style.id === id);
 
     document.getElementById('edit-id').value = style.id;
     document.getElementById('edit-name').value = style.name;
@@ -69,7 +69,7 @@ function updateStyle() {
     return false;
 }
 function closeInput() {
-    document.getElementById('editForm').style.display = 'none';
+    document.getElementById('editForm').style.display = 'none'; //editForm -> change to editStyle
 }
 
 function _displayStyles(data) {
