@@ -29,7 +29,7 @@ function addStyle() {
         })
         .catch(error => console.error('Unable to add style.', error));
 }
-function deleteCategory(id) {
+function deleteStyle(id) {
     fetch(`${uri}/${id}`, {
         method: 'DELETE'
     })
