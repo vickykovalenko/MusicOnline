@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using MusicOnline;
 
 
-namespace MusicOnline
+
+namespace MusicOnline.Models
 {
 	public class MusicContext : DbContext
 	{

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using MusicOnline.Models;
 
 
 namespace MusicOnline
@@ -28,6 +29,7 @@ namespace MusicOnline
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<MusicContext>(options => options.UseSqlServer(connection));
             services.AddControllers();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,16 +40,20 @@ namespace MusicOnline
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
 
-                //endpoints.MapGet("/", async context =>
-                //{
-                //   await context.Response.WriteAsync("Hello World!");
-                //});
+                /*endpoints.MapGet("/", async context =>
+                {
+                   await context.Response.WriteAsync("Hello World!");
+                });*/
+
             });
         }
     }

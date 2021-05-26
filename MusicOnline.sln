@@ -5,22 +5,7 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicOnline", "MusicOnline.csproj", "{80D44740-65F9-4908-8A0B-52352E5D112C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{A601941C-2CB4-4E4E-84E2-3E6BA3FBABF8}"
-	ProjectSection(SolutionItems) = preProject
-		Album.cs = Album.cs
-		Artist.cs = Artist.cs
-		ArtistSongs.cs = ArtistSongs.cs
-		MusicContext.cs = MusicContext.cs
-		Playlist.cs = Playlist.cs
-		Song.cs = Song.cs
-		SongPlaylists.cs = SongPlaylists.cs
-		SongStyles.cs = SongStyles.cs
-		Style.cs = Style.cs
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{38923CA0-B686-4310-8F2B-5268FCFBBC93}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{C9B8B928-D601-4942-9958-1802DF6D0E8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

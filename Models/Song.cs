@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using MusicOnline;
 
-namespace MusicOnline
+namespace MusicOnline.Models
 {
 	public class Song
 	{

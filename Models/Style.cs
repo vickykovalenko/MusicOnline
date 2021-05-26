@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using MusicOnline;
 
-namespace MusicOnline
+namespace MusicOnline.Models
 {
-	public class Playlist
+	public class Style
 	{
-		public Playlist()
+		public Style()
 		{
-			SongPlaylists = new List<SongPlaylists>();
+			SongStyles = new List<SongStyles>();
 		}
-		public int Id { get; set; }
 
+		public int Id { get; set; }
 		[Required(ErrorMessage = "Поле не повинно бути порожнім")]
 		[Display(Name = "Назва")]
 		public string Name { get; set; }
 
-		public virtual ICollection<SongPlaylists> SongPlaylists { get; set; }
+		public virtual ICollection<SongStyles> SongStyles { get; set; }
+
 	}
 }
